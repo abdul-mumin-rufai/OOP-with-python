@@ -4,11 +4,10 @@ class Enemy:
     health_point: int = 100
     attack_damage: int = 2
 
-    def kakai_talking(self):
-        print(f'I am {self.type_of_enemy} i want with you')
+    def __int__(self):
+        pass
+    # this is optional, and it is called automatically by python when the object instance is created
 
-    def kakai_fight(self):
-        print(f'{self.type_of_enemy} attacks for damage of 2')
-
-    def kakai_health_point(self):
-        print(f'{self.type_of_enemy} has a {self.health_point} health points')
+    def __init__(self):
+        print(f'This is an optional contractor but i am still')
+        # this is non parameter constructor
