@@ -1,6 +1,5 @@
 from enemy import *
 
-enemy = Enemy()
-enemy.type_of_enemy = 'Kakai'
-
+enemy = Enemy('kakai', 59, 1000)
 print(enemy)
+

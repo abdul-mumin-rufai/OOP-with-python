@@ -1,13 +1,5 @@
 # enemy object
 class Enemy:
-    type_of_enemy: str
-    health_point: int = 100
-    attack_damage: int = 2
 
-    def __int__(self):
-        pass
-    # this is optional, and it is called automatically by python when the object instance is created
-
-    def __init__(self):
-        print(f'This is an optional contractor but i am still')
-        # this is non parameter constructor
+    def __init__(self, type_of_enemy, health_point=100, attack_damage=100):
+        print(f'this is {type_of_enemy} and health of {health_point} and has damage point of {attack_damage}')
