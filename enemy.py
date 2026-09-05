@@ -2,8 +2,6 @@
 class Enemy:
 
     def __init__(self, type_of_enemy, health_point, attack_damage):
-        print('this is parameter constructor')
-
         self.__type_of_enemy = type_of_enemy  # this is a private attribute
         self.health_point = health_point
         self.attack_damage = attack_damage
@@ -16,8 +14,8 @@ class Enemy:
 
     def kick(self):
         print(
-            f'{self.__type_of_enemy} has health point of {self.health_point} and kicks you to cause {self.attack_damage} '
-            f'damage')
+            f'{self.__type_of_enemy} has health point of {self.health_point} and kicks you to cause '
+            f'{self.attack_damage} damage')
 
     # we use the get method to access a private attribute
     def get_type_of_enemy(self):
