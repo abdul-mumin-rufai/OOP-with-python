@@ -1,5 +1,9 @@
 from enemy import *
-enemy = Enemy('Zombie', 20, 10)
+from zombie import *
+from kakai import *
 
-print(enemy.kick())
+zombie = Zombie(20, 10)
+kakai = Kakai(90, 40)
+print(kakai.attack_damage, kakai.kick())
 
+# print(zombie.walk(), zombie.trouble())
