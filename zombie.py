@@ -1,4 +1,5 @@
 from enemy import *
+import random
 
 
 class Zombie(Enemy):
@@ -12,5 +13,11 @@ class Zombie(Enemy):
     def walk(self):
         print(f'Zombie is smuggling around')
 
+    def special_attack(self):
+        is_special_attack = random.random() < 0.5
+        if is_special_attack:
+            self.health_point += 4
+            print('Zombie regenerated HP of 4')
+
     def trouble(self):
-        print(f'me')
+        print(f'Zombie is spreading diseases')
